@@ -29,7 +29,17 @@
 
     <div class="container my-5">
         <h1>Our Games</h1>
-        <div class="image-placeholder bg-orange" style="height: 300px; margin: 0 auto;"></div>
+        <div class="image-placeholder bg-orange" style="height: 300px; margin: 0 auto;">
+            <img src="img/scenes.png" id="image-placeholder bg-orange" style="height: 300px; margin: 0 auto;" usemap="#scenery">
+                <map name="scenery">
+                    <area shape="rect" coords="0,0,256,843" href="https://polyclashio.web.app/" alt="Area 1" target="_blank">
+                    <area shape="rect" coords="261,0,527,843" href="https://polyclashio.web.app/" alt="Area 2" target="_blank">
+                    <area shape="rect" coords="531,0,795,843" href="https://polyclash.online/" alt="Area 3" target="_blank">
+                    <area shape="rect" coords="804,0,1068,843" href="https://polyclash.online/" alt="Area 3" target="_blank">
+                    <area shape="rect" coords="1076,0,1330,843" href="https://polyclash.online/" alt="Area 3" target="_blank">
+                </map>
+            </img>
+        </div>
         <br>
         <p>Explore our exciting range of games designed for all types of gamers!</p>
         <ul class="list-group my-4">
@@ -68,6 +78,29 @@
                 </div>
             </div>
         </div>
+
+        <br>    
+        <h2>Assets</h2>
+        <div class="image-gallery my-4">
+            <img src="img/dagger1.png" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/dagger2.png" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/dagger3.png" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/dagger4.png" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/characters.png" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/piskel-left.gif" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/zooming-piskel.gif" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/piskel-right.gif" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/flying-bord.gif" class="gallery-img" onclick="openLightbox(this.src)">
+            <img src="img/weapons.png" class="gallery-img" onclick="openLightbox(this.src)">
+        </div>
+        
+        <!-- Lightbox Modal -->
+        <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <div class="lightbox-image-container">
+                <img class="lightbox-image" id="lightboxImage">
+            </div>
+        </div>
     </div>
 
     <footer class="text-center bg-dark text-white py-3">
@@ -79,5 +112,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

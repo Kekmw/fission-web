@@ -34,9 +34,18 @@ body {
 /* Image Placeholder Styles */
 .image-placeholder {
     /* Image placeholder where you can place images */
-    background-image: url('img/img2.png'); /* Placeholder image */
+    background-image: url('img/scenes.png'); /* Placeholder image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(255, 69, 0, 0.5); /* Shadow effect */
+    opacity: 0.9; /* Slight transparency */
+}
+
+#image-placeholder {
+    /* Image placeholder where you can place images */
+    size: cover; /* Cover the entire area */
+    position: center; /* Center the image */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(255, 69, 0, 0.5); /* Shadow effect */
     opacity: 0.9; /* Slight transparency */
@@ -70,7 +79,7 @@ body {
 .gallery-img {
     width: 20%;
     height: 10%;
-    margin: 5px; /* Margin around gallery images */
+    margin: 20px auto; /* Margin around gallery images */
     border-radius: 10px; /* Rounded corners */
     transition: transform 0.2s; /* Smooth transition for hover effects */
     float: left; /* Float images left */
@@ -78,6 +87,48 @@ body {
 
 .gallery-img:hover {
     transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Lightbox Modal Styles */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with opacity */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+/* Lightbox Image Container */
+.lightbox-image-container {
+    max-width: 90%; /* Max width of the container */
+    max-height: 90%; /* Max height of the container */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Lightbox Image */
+.lightbox-image {
+    max-width: 100%; /* Image takes full width of container */
+    max-height: 100%; /* Image takes full height of container */
+}
+
+/* Close Button */
+.close {
+    color: #ffcc00; /* Close button color */
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer; /* Pointer cursor */
 }
 
 /* Button Styles */
@@ -119,6 +170,12 @@ footer {
     padding: 20px 0; /* Padding for footer */
     text-align: center; /* Center align text */
 }
+
+/* Image map styles */
+.footer-image-map {
+    margin-top: 10px; /* Space above image map */
+}
+
 
 /* Shadow Effects */
 .shadow {
