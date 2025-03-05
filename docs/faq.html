@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fission Entertainment - FAQ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+        <a class="navbar-brand" href="#">Fission Entertainment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1>Frequently Asked Questions</h1>
+        <div class="image-placeholder bg-danger" style="height: 300px; margin: 0 auto;"></div>
+        <br>
+        <p>Find answers to your questions about our games and services!</p>
+        <div class="list-group my-4">
+            <div class="list-group-item" onclick="toggleAnswer('answer1')">
+                What platforms do you develop for?
+            </div>
+            <div id="answer1" class="answer">
+                We develop for various platforms including PC, consoles, and mobile devices.
+            </div>
+        
+            <div class="list-group-item" onclick="toggleAnswer('answer2')">
+                How can I report a bug?
+            </div>
+            <div id="answer2" class="answer">
+                You can report bugs through our support page or by emailing us directly at FissionE93@outlook.com.
+            </div>
+        
+            <div class="list-group-item" onclick="toggleAnswer('answer3')">
+                Do you have a newsletter?
+            </div>
+            <div id="answer3" class="answer">
+                Yes, we have a newsletter! You can sign up on our website to receive updates and news.
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-3">
+        <p>&copy; 2025 Fission Entertainment</p>
+        <p>Email: FissionE93@outlook.com | Phone: (123) 456-7890</p>
+        <p>Developer: Matt Lawrence O. Miguela</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
